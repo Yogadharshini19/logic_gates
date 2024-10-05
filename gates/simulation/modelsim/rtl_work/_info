@@ -1,0 +1,227 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/quartus projects/gates/simulation/modelsim
+vand_gate
+Z1 !s110 1728093806
+!i10b 1
+!s100 h:9Q2=8^:NXJ6An]>h?[j0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+If7a[Bf7j2Wc[Ee_GAJkka1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1728090004
+Z5 8D:/quartus projects/gates/logic_gates.v
+Z6 FD:/quartus projects/gates/logic_gates.v
+!i122 0
+L0 14 5
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1728093806.000000
+Z9 !s107 D:/quartus projects/gates/logic_gates.v|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/quartus projects/gates|D:/quartus projects/gates/logic_gates.v|
+!i113 1
+Z11 o-vlog01compat -work work
+Z12 !s92 -vlog01compat -work work {+incdir+D:/quartus projects/gates}
+Z13 tCvgOpt 0
+vlogic_gates
+R1
+!i10b 1
+!s100 2KGD6i8?AOVM0FI>H6LB52
+R2
+IU1okDTEfeD6dXB:3heMil2
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 1 12
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vlogic_gates_tb
+R1
+!i10b 1
+!s100 g>S7P1;Gf`z6ZJeL^zUZK3
+R2
+I]kSgfSeZQRT8;dnU02fmC2
+R3
+R0
+w1728089989
+8D:/quartus projects/gates/logic_gates_tb.v
+FD:/quartus projects/gates/logic_gates_tb.v
+!i122 1
+L0 1 18
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/quartus projects/gates/logic_gates_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/quartus projects/gates|D:/quartus projects/gates/logic_gates_tb.v|
+!i113 1
+R11
+R12
+R13
+vnand_gate
+R1
+!i10b 1
+!s100 SB41PGDb4L^T]@PIPQfcI0
+R2
+ILQcCYn:UA`L=NFz2WTBeb1
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 20 5
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vnor_gate
+R1
+!i10b 1
+!s100 XNZjSGHBb5iA8V38bC8>N0
+R2
+IP8HgJO2HScj?oRaj3[N1h3
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 32 5
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vnot_gate
+R1
+!i10b 1
+!s100 EL<<b]e?;m92hf7`91YF;0
+R2
+IALMk_438dKhek5kY[O[l>1
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 50 5
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vor_gate
+R1
+!i10b 1
+!s100 Hnob99=DIKY789[TCL98l0
+R2
+IPj>FY7XN<0WVU<nH=d19K2
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 26 5
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vxnor_gate
+R1
+!i10b 1
+!s100 T:hTkUeHdF^biebi[L4@_3
+R2
+IU2e]2idRiLg>KgaZ[247d0
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 44 5
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vxor_gate
+R1
+!i10b 1
+!s100 =g3]?1HnKIWZLAA62ocSW3
+R2
+IfCWX5][bV]nN:EJ7l2WdT3
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 38 5
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13

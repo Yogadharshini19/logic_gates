@@ -1,0 +1,67 @@
+# Reading pref.tcl
+# do logic_gates_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/quartus\ projects/gates {D:/quartus projects/gates/logic_gates.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:03:26 on Oct 04,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/quartus projects/gates" D:/quartus projects/gates/logic_gates.v 
+# -- Compiling module logic_gates
+# -- Compiling module and_gate
+# -- Compiling module nand_gate
+# -- Compiling module or_gate
+# -- Compiling module nor_gate
+# -- Compiling module xor_gate
+# -- Compiling module xnor_gate
+# -- Compiling module not_gate
+# 
+# Top level modules:
+# 	logic_gates
+# End time: 19:03:26 on Oct 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/quartus\ projects/gates {D:/quartus projects/gates/logic_gates_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:03:26 on Oct 04,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/quartus projects/gates" D:/quartus projects/gates/logic_gates_tb.v 
+# -- Compiling module logic_gates_tb
+# 
+# Top level modules:
+# 	logic_gates_tb
+# End time: 19:03:26 on Oct 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  logic_gates_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" logic_gates_tb 
+# Start time: 19:03:27 on Oct 04,2024
+# Loading work.logic_gates_tb
+# Loading work.logic_gates
+# Loading work.and_gate
+# Loading work.nand_gate
+# Loading work.or_gate
+# Loading work.nor_gate
+# Loading work.xor_gate
+# Loading work.xnor_gate
+# Loading work.not_gate
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# time=                   0 ,p=0 q=1 r=0 s=1 t=0 c=1 d=1
+# time=                   5 ,p=0 q=1 r=1 s=0 t=1 c=0 d=1
+# time=                  10 ,p=0 q=1 r=1 s=0 t=1 c=0 d=0
+# time=                  15 ,p=1 q=0 r=1 s=0 t=0 c=1 d=0
+# ** Note: $stop    : D:/quartus projects/gates/logic_gates_tb.v(16)
+#    Time: 20 ps  Iteration: 0  Instance: /logic_gates_tb
+# Break in Module logic_gates_tb at D:/quartus projects/gates/logic_gates_tb.v line 16
