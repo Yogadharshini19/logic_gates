@@ -1,0 +1,59 @@
+# Reading pref.tcl
+# do flip_flops_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/quartus\ projects/flipflops {D:/quartus projects/flipflops/flip_flops.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:29:38 on Oct 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/quartus projects/flipflops" D:/quartus projects/flipflops/flip_flops.v 
+# -- Compiling module flip_flops
+# -- Compiling module jk_ff
+# -- Compiling module sr_ff
+# -- Compiling module d_ff
+# -- Compiling module t_ff
+# 
+# Top level modules:
+# 	flip_flops
+# End time: 21:29:38 on Oct 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/quartus\ projects/flipflops {D:/quartus projects/flipflops/flip_flops_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:29:38 on Oct 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/quartus projects/flipflops" D:/quartus projects/flipflops/flip_flops_tb.v 
+# -- Compiling module flip_flops_tb
+# 
+# Top level modules:
+# 	flip_flops_tb
+# End time: 21:29:38 on Oct 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  flip_flops_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" flip_flops_tb 
+# Start time: 21:29:38 on Oct 06,2024
+# Loading work.flip_flops_tb
+# Loading work.flip_flops
+# Loading work.jk_ff
+# Loading work.sr_ff
+# Loading work.d_ff
+# Loading work.t_ff
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : D:/quartus projects/flipflops/flip_flops_tb.v(28)
+#    Time: 400 ps  Iteration: 0  Instance: /flip_flops_tb
+# Break in Module flip_flops_tb at D:/quartus projects/flipflops/flip_flops_tb.v line 28
+# End time: 21:29:55 on Oct 06,2024, Elapsed time: 0:00:17
+# Errors: 0, Warnings: 0

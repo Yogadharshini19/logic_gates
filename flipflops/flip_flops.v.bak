@@ -1,0 +1,104 @@
+module flip_flops(s,r,j,k,d,t,q,qb,clk,rst);
+input s,r,j,k,d,t,clk,rst
+output reg q,qb;
+jk_ff f1(j,k,clk,rst,q,qb);
+sr_ff f2(s,r,clk,rst,q,qb);
+d_ff f3(d,clk,rst,q,qb);
+t_ff f4(t,clk,rst,q,qb);
+endmodule
+
+module jk_ff(j,k,clk,rst,q,qb);
+input j,k,clk,rst;
+output reg q, qb;
+always @(posedge clk)
+if(rst)
+begin
+q=0;
+qb=~q;
+end
+else
+begin
+case({j,k})
+2'b00:begin  q=q;   qb=~q; end
+2'b01:begin  q=1'b0;qb=1'b1;end
+2'b10: begin q=1'b1;qb=1'b0;end
+2'b11: begin q=qb;   qb=~qb; end
+endcase
+end
+endmodule
+
+module sr_ff(s,r,clk,rst,q,qb);
+input j,k,clk,rst;
+output reg q, qb;
+always @(posedge clk)
+if(rst)
+begin
+q=0;
+qb=~q;
+end
+else
+begin
+case({j,k})
+2'b00:begin  q=q;   qb=~q; end
+2'b01:begin  q=1'b0;qb=1'b1;end
+2'b10: begin q=1'b1;qb=1'b0;end
+2'b11: begin q=qb;   qb=~qb; end
+endcase
+end
+endmodule
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,74 @@
+|flip_flops
+j => j.IN1
+k => k.IN1
+s => s.IN1
+r => r.IN1
+d => d.IN1
+t => t.IN1
+q_jk <= jk_ff:f1.port4
+qb_jk <= jk_ff:f1.port5
+q_sr <= sr_ff:f2.port4
+qb_sr <= sr_ff:f2.port5
+q_d <= d_ff:f3.port3
+qb_d <= d_ff:f3.port4
+q_t <= t_ff:f4.port3
+qb_t <= t_ff:f4.port4
+clk => clk.IN4
+rst => rst.IN4
+
+
+|flip_flops|jk_ff:f1
+j => Mux0.IN2
+j => Mux1.IN4
+k => Mux0.IN3
+k => Mux1.IN5
+clk => qb_jk~reg0.CLK
+clk => q_jk~reg0.CLK
+rst => qb_jk~reg0.PRESET
+rst => q_jk~reg0.ACLR
+q_jk <= q_jk~reg0.DB_MAX_OUTPUT_PORT_TYPE
+qb_jk <= qb_jk~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|flip_flops|sr_ff:f2
+s => Mux0.IN4
+s => Mux1.IN4
+s => Mux2.IN4
+s => Mux3.IN4
+r => Mux0.IN5
+r => Mux1.IN5
+r => Mux2.IN5
+r => Mux3.IN5
+clk => qb_sr~reg0.CLK
+clk => qb_sr~en.CLK
+clk => q_sr~reg0.CLK
+clk => q_sr~en.CLK
+rst => qb_sr~reg0.PRESET
+rst => q_sr~reg0.ACLR
+rst => q_sr~en.PRESET
+rst => qb_sr~en.PRESET
+q_sr <= q_sr.DB_MAX_OUTPUT_PORT_TYPE
+qb_sr <= qb_sr.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|flip_flops|d_ff:f3
+d => q_d~reg0.DATAIN
+d => qb_d~reg0.DATAIN
+clk => qb_d~reg0.CLK
+clk => q_d~reg0.CLK
+rst => qb_d~reg0.PRESET
+rst => q_d~reg0.ACLR
+q_d <= q_d~reg0.DB_MAX_OUTPUT_PORT_TYPE
+qb_d <= qb_d~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|flip_flops|t_ff:f4
+t => q_t.OUTPUTSELECT
+clk => qb_t~reg0.CLK
+clk => q_t~reg0.CLK
+rst => qb_t~reg0.PRESET
+rst => q_t~reg0.ACLR
+q_t <= q_t~reg0.DB_MAX_OUTPUT_PORT_TYPE
+qb_t <= qb_t~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

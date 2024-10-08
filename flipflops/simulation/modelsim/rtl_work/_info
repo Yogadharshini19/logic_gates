@@ -1,0 +1,155 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/quartus projects/flipflops/simulation/modelsim
+vd_ff
+Z1 !s110 1728275378
+!i10b 1
+!s100 91fCj7B9iUO_S]T?;@ZPU3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IBdlEc6]gRWeLC77>Z_le53
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1728173728
+Z5 8D:/quartus projects/flipflops/flip_flops.v
+Z6 FD:/quartus projects/flipflops/flip_flops.v
+!i122 0
+L0 50 14
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1728275378.000000
+Z9 !s107 D:/quartus projects/flipflops/flip_flops.v|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/quartus projects/flipflops|D:/quartus projects/flipflops/flip_flops.v|
+!i113 1
+Z11 o-vlog01compat -work work
+Z12 !s92 -vlog01compat -work work {+incdir+D:/quartus projects/flipflops}
+Z13 tCvgOpt 0
+vflip_flops
+R1
+!i10b 1
+!s100 _GDOL=iI>O^;m6LLP`9^T3
+R2
+I_MhbzgReKOaiR`M[P?mb33
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 1 8
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vflip_flops_tb
+R1
+!i10b 1
+!s100 7;MfYP<5F<]n<fLA1MObZ2
+R2
+IX<IXaG6;0<G>X9SFCfT<30
+R3
+R0
+w1728275252
+8D:/quartus projects/flipflops/flip_flops_tb.v
+FD:/quartus projects/flipflops/flip_flops_tb.v
+!i122 1
+L0 1 30
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/quartus projects/flipflops/flip_flops_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/quartus projects/flipflops|D:/quartus projects/flipflops/flip_flops_tb.v|
+!i113 1
+R11
+R12
+R13
+vjk_ff
+R1
+!i10b 1
+!s100 ez^7jQQCYaU;NPR:m`<V;2
+R2
+IKm6YXRaFiReWCeMj]n^Z01
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 10 19
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vsr_ff
+R1
+!i10b 1
+!s100 Xi>;3_KbWWXDT[5lTknCh3
+R2
+IMU;OXRzL5LkAV][K^1z432
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 30 19
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vt_ff
+R1
+!i10b 1
+!s100 J@eA8J65QC0`JfUIGeAS]3
+R2
+I6^2f@c9b9CeA^R`_FA=VB0
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 65 15
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13

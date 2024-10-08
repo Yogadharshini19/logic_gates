@@ -1,0 +1,120 @@
+module jk_ff_tb;
+reg j,k,clk,rst;
+wire q, qb;
+jk_ff dut(.j(j),.k(k),.q(q), .qb(qb),.clk(clk),.rst(rst));
+initial
+begin
+clk=1;
+forever
+#10 clk=~clk;
+end
+initial 
+begin
+rst=1;
+#50;
+rst=10000;
+end
+initial
+begin
+j=1'b0;k=1'b0;
+#100; 
+j=1'b0;k=1'b1;
+#100; 
+j=1'b1;k=1'b0;
+#100; 
+j=1'b1;k=1'b1;
+#100; 
+$stop;
+end
+endmodule 
+
+module sr_ff_tb;
+reg s,r,clk,rst;
+wire q, qb;
+jk_ff dut(.s(s),.r(r),.q(q), .qb(qb),.clk(clk),.rst(rst));
+initial
+begin
+clk=1;
+forever
+#10 clk=~clk;
+end
+initial 
+begin
+rst=1;
+#50;
+rst=10000;
+end
+initial
+begin
+s=1'b0;r=1'b0;
+#100; 
+s=1'b0;r=1'b1;
+#100; 
+s=1'b1;r=1'b0;
+#100; 
+s=1'b1;r=1'b1;
+#100; 
+$stop;
+end
+endmodule 
+
+module d_ff_tb;
+ reg d,rst,clk;
+ wire q,qb;
+ jk_ff dut(.d(d),.q(q), .qb(qb),.clk(clk),.rst(rst));
+initial
+begin
+clk=1;
+forever
+#10 clk=~clk;
+end
+initial 
+begin
+rst=1;
+#50;
+rst=0;
+#10000;
+end
+initial 
+begin
+d=1'b0;
+#100;
+d=1'b1;
+#100;
+$stop;
+end
+endmodule
+
+module t_ff_tb;
+ reg t,rst,clk;
+ wire q,qb;
+ jk_ff dut(.t(t),.q(q), .qb(qb),.clk(clk),.rst(rst));
+initial
+begin
+clk=1;
+forever
+#10 clk=~clk;
+end
+initial 
+begin
+rst=1;
+#50;
+rst=0;
+#10000;
+end
+initial 
+begin
+t=1'b0;
+#100;
+t=1'b1;
+#100;
+$stop;
+end
+endmodule
+
+
+
+
+
+
+
