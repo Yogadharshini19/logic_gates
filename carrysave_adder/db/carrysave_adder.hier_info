@@ -1,0 +1,133 @@
+|carrysave_adder
+p[0] => p[0].IN1
+p[1] => p[1].IN1
+p[2] => p[2].IN1
+p[3] => p[3].IN1
+q[0] => q[0].IN1
+q[1] => q[1].IN1
+q[2] => q[2].IN1
+q[3] => q[3].IN1
+r[0] => r[0].IN1
+r[1] => r[1].IN1
+r[2] => r[2].IN1
+r[3] => r[3].IN1
+sum[0] << full_adder:fa5.port3
+sum[1] << full_adder:fa6.port3
+sum[2] << full_adder:fa7.port3
+sum[3] << full_adder:fa8.port3
+sum[4] << <GND>
+cout << full_adder:fa8.port4
+
+
+|carrysave_adder|full_adder:fa1
+a => sum.IN0
+a => carry.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+b => carry.IN0
+c => sum.IN1
+c => carry.IN1
+c => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carrysave_adder|full_adder:fa2
+a => sum.IN0
+a => carry.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+b => carry.IN0
+c => sum.IN1
+c => carry.IN1
+c => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carrysave_adder|full_adder:fa3
+a => sum.IN0
+a => carry.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+b => carry.IN0
+c => sum.IN1
+c => carry.IN1
+c => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carrysave_adder|full_adder:fa4
+a => sum.IN0
+a => carry.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+b => carry.IN0
+c => sum.IN1
+c => carry.IN1
+c => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carrysave_adder|full_adder:fa5
+a => sum.IN0
+a => carry.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+b => carry.IN0
+c => sum.IN1
+c => carry.IN1
+c => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carrysave_adder|full_adder:fa6
+a => sum.IN0
+a => carry.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+b => carry.IN0
+c => sum.IN1
+c => carry.IN1
+c => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carrysave_adder|full_adder:fa7
+a => sum.IN0
+a => carry.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+b => carry.IN0
+c => sum.IN1
+c => carry.IN1
+c => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carrysave_adder|full_adder:fa8
+a => sum.IN0
+a => carry.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+b => carry.IN0
+c => sum.IN1
+c => carry.IN1
+c => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+

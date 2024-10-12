@@ -1,0 +1,56 @@
+# Reading pref.tcl
+# do carrysave_adder_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/quartus\ projects/carrysave_adder {D:/quartus projects/carrysave_adder/carrysave_adder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:51:02 on Oct 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/quartus projects/carrysave_adder" D:/quartus projects/carrysave_adder/carrysave_adder.v 
+# -- Compiling module carrysave_adder
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	carrysave_adder
+# End time: 18:51:02 on Oct 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/quartus\ projects/carrysave_adder {D:/quartus projects/carrysave_adder/carrysave_adder_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:51:02 on Oct 10,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/quartus projects/carrysave_adder" D:/quartus projects/carrysave_adder/carrysave_adder_tb.v 
+# -- Compiling module carrysave_adder_tb
+# 
+# Top level modules:
+# 	carrysave_adder_tb
+# End time: 18:51:02 on Oct 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  carrysave_adder_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" carrysave_adder_tb 
+# Start time: 18:51:02 on Oct 10,2024
+# Loading work.carrysave_adder_tb
+# Loading work.carrysave_adder
+# Loading work.full_adder
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# time=                   0 sum=01011 cout=0
+# time=                   5 sum=10110 cout=0
+# time=                  10 sum=11100 cout=0
+# ** Note: $stop    : D:/quartus projects/carrysave_adder/carrysave_adder_tb.v(14)
+#    Time: 15 ps  Iteration: 0  Instance: /carrysave_adder_tb
+# Break in Module carrysave_adder_tb at D:/quartus projects/carrysave_adder/carrysave_adder_tb.v line 14
+# End time: 18:53:09 on Oct 10,2024, Elapsed time: 0:02:07
+# Errors: 0, Warnings: 0
